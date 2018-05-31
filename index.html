@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Agency - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+    <style>
+          #mainNav1{
+        background-color:white;
+        border-bottom: 1px solid gray;
+        height:35px !important;
+      }
+      #mainNav2{
+        position: fixed;
+        top:35px;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        z-index: 10;
+        border-bottom: 1px solid gray;
+      }
+      .navbar a{
+        color:gray;
+        font-weight: bold;
+        margin-left: 30px;
+      }
+      #menuDiv{
+        margin:0 auto;
+        float: left;
+        height:50px;
+        padding-top:15px;
+      }
+      .dropMenu{
+        display:none;
+        background-color: white;
+        position: fixed;
+        top:85px;
+        width: 100%;
+        height:400px;
+        z-index: 10;
+      }
+      .dropMenu a{
+        color:gray;
+        font-size: 7px;
+      }
+      .dropUl{
+        display: inline-block;
+        border-right: 1px solid gray;
+        position: relative;
+        top:10px;
+        width: 13%;
+        height: 80%;
+      }
+      .header_sowon{
+        position:relative;
+        top:85px;
+      }
+      .fontBold{
+        font-weight: bold;
+      }
+      .dropMenu a:hover{
+        list-style: underline;
+      }
+      .resize{
+        font-size: 10px;
+      }
+      .moveLeft{
+        position: absolute;
+        left:0;
+        float: left;
+
+      }
+      .moveLeft>div{
+        display: inline-block;
+        width:80px;
+        height:30px;
+        text-align: center;
+        padding-top:5px;
+      }
+      .moveLeft>div>a{
+       margin:0 auto;
+     }
+     .icon {
+      position: absolute;
+      top:5px;
+    }
+    #search {
+      padding-left: 20px;
+    }
+    #searchLable {
+      position: relative;
+    }
+    #searchLable:before {
+      color: #666;
+      content:"\f002";
+      font-family: FontAwesome;
+      position: absolute;
+      top: 2px;
+      left: 5px;
+    }
+    #buyBtn{
+      background-color: white;
+      font-size: 10px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border-style: solid;
+      border-color: black;
+      border-width: 1px;
+    }
+
+   @media(min-width: 100px) and (max-width: 995px){
+      #contact_div{
+        display: none;
+      }
+    }
+
+    @media(min-width:995px){
+      #contact_div_small{
+        display:none;
+
+      }
+    }
+    </style>
+  </head>
+
+  <body id="page-top">
+
+   <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav1">
+    <div class="container resize">
+      <div class="moveLeft">
+        <div>
+          <a  href="#page-top">NIKE</a>
+        </div>
+        <div>
+          <a  href="#page-top">NIKE+</a>
+        </div>
+        <div>
+          <a  href="#page-top"><img src="./img/menu_jo.png" alt="" id = "jo"></a>
+        </div>
+        <div style="width:90px;">
+          <a  href="#page-top"><img src="./img/menu_con.png" alt="" id="con"></a>
+        </div>
+      </div>
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a href="#services">회원가입/</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio" style="margin-left:0;">로그인</a>
+        </li>
+        <li class="nav-item" style>
+          <a href="#about">고객센터</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team"><span class="fa fa-shopping-cart fa-lg"></span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact"><img src="./img/lang.png" alt=" "></a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav2">
+    <div class="container-fluid">
+        <a href="#page-top"><img src="./img/nike_logo.png" alt="" height="45px;"></a>
+        <div id="menuDiv">
+          <ul class="navbar-nav text-uppercase ml-auto" id="nikeMenu">
+            <li class="nav-item">
+              <a  href="#services">MEN</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio">WOMEN</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about">BOYS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#team">GIRLS</a>
+            </li>
+          </ul>
+        </div>
+        <label id="searchLable">
+          <input type="text" id="search" placeholder="검색어 입력" />
+        </label>
+    </div>
+  </nav>
+  <!-- dropMenu -->
+  <div class="dropMenu">
+    <div class="dropUl fontBold" style="left:17%;" border-left="1ps solid gray">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a  href="#services">신상품</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio">SNKRS 런칭캘린더</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">축구대표팀 컬렉션</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team">나이키 비전 선글라스</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">나이키 캡 컬렉션</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">THE BEST</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">1 on 1 상품 설명 서비스</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">가격인하</a>
+        </li>
+      </ul>
+    </div>
+    <div class="dropUl" style="left:20%;border-right: none;" border-left="1ps solid gray">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a  class="fontBold" href="#services">신발</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio">신발 전체</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">라이프스타일</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team">러닝</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">트레이닝&짐</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">농구</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">조던</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">축구</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">스케이트보딩</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">골프</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">테니스</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">샌들&슬리퍼</a>
+        </li>
+      </ul>
+    </div>
+    <div class="dropUl" style="left:20%;" border-left="1ps solid gray">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a   class="fontBold" href="#services">의류</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio">의류 전체</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">탑 & 티셔츠</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team">숏 팬츠</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">후디 & 크루</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">재킷 & 베스트</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">팬츠 & 타이츠</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">나이키프로</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">선글라스</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">가방</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">양말</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">모자 & 용품</a>
+        </li>
+      </ul>
+    </div>
+    <div class="dropUl" style="left:23%;border-right: none;" border-left="1ps solid gray">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a class="fontBold" href="#services">스포츠</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio">러닝</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">트레이닝 & 짐</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team">농구</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">축구</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">스케이트보딩</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">골프</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">테니스</a>
+        </li>
+      </ul>
+    </div>
+    <div class="dropUl" style="left:23%;border-right: none;" border-left="1ps solid gray">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a class="fontBold" href="#services">브랜드</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio">Nike Sportswear</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">트레이닝 & 짐</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team">농구</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">축구</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">스케이트보딩</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">골프</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">테니스</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+ <!-- Header -->
+  <header class="header_sowon">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./img/main_image1.png" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./img/main_image3.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./img/main_image4.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </header>
+
+
+  <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="text-center"style="margin-top: 100px">
+            <h3>SUMMER COLLECTION</h3>
+              <p class="large text-muted">낮이 길어진 여름, 가볍고 다양한 스타일의 썸머 컬렉션으로 스포츠와 스타일을 즐겨보세요.</p>
+               <br>
+              <img class="img-fluid" src="img/nike/middle_img_1.png" alt="">
+             <div class="col-lg-8 mx-auto text-center">
+              <br>
+              <h3>나이키 에어 줌 페가수스 35</h3>
+              <p class="large text-muted">여성용 에어 줌 페가수스 35가 가벼운 러닝을 위해 업르레이드 된 미드솔과 함께 돌아왔습니다. 더 빠르게, 더 가볍게 달려보세요.</p>
+              <button id="buyBtn" onclick="location.href='buy.html'">구매하기</button>
+          </div>
+        <br>
+        </div>
+          <div class="text-center">
+              <img class="img-fluid" src="img/nike/middle_img_2.png" alt="">
+             <div class="col-lg-8 mx-auto text-center">
+              <br>
+              <h3>러닝 컬렉션</h3>
+              <p class="large text-muted">최상의 컨디션으로 러닝에  몰입할 수 있도록 도와줄 최신 러닝 의류 컬렉션을 만나보세요.</p>
+          </div>
+          <div class="row">
+          <div class="col-xs-3 portfolio-item">
+            <img class="img-fluid" src="img/nike/nikeair.png" alt="">
+            <div class="portfolio-caption">
+              <p class="text-muted">구매하기</p>
+            </div>
+          </div>
+           <div class="col-xs-3 portfolio-item">
+            <img class="img-fluid" src="img/nike/niked.png" alt="">
+            <div class="portfolio-caption">
+              <p class="text-muted">구매하기</p>
+            </div>
+          </div>
+           <div class="col-xs-3 portfolio-item">
+            <img class="img-fluid" src="img/nike/nikeb.png" alt="">
+            <div class="portfolio-caption">
+              <p class="text-muted">구매하기</p>
+            </div>
+          </div>
+           <div class="col-xs-3 portfolio-item">
+            <img class="img-fluid" src="img/nike/nikes.png" alt="">
+            <div class="portfolio-caption">
+              <p class="text-muted">구매하기</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="bg-light" id="team">
+      <div class="video-container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto text-center">
+            <video autoplay muted preload="true" loop>
+              <source src="https://nikevideo.nike.com/72451143001/201804/1553/72451143001_5774076288001_5774068998001.mp4" type="video/mp4">
+            </video>
+      
+          <div class="col-lg-8 mx-auto text-center">
+            <br>
+            <img alt="가벼운 무게. 쾌적한 착용감. 간편한 휴대성." src="https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/structured-content/2357/180503_WLP_p1_tit.png">
+            <p class="large text-muted">5가지 에센셜을 모두 담은 24oz(680g)의 초경량 여름 컬렉션으로 24시간을 더욱 활기차고 가볍게 즐겨보세요.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container" id="contact_div_small">
+        <div class="row">
+          <div class="col-xs-4"><li><a href="">주문배송</a></li></div>
+          <div class="col-xs-4"><li><a href="">매장안내</a></li></div>
+          <div class="col-xs-4"><li><a href="">고객센터</a></li></div>
+            
+        </div>
+      </div>
+
+      <div class="container" id = "contact_div">
+        <div class="row">
+          <div class="col-xs-3" id = "bottom">
+                <ul>
+                  <li><a href="#">매장안내</a></li>
+                  <li><a href="">로그인</a></li>
+                  <li><a href="">회원가입</a></li>
+                </ul>
+                
+          </div>
+          <div class="col-xs-3" id = "bottom">
+              <ul>
+                <li><a href="">고객센터</a></li>
+                <li><a href="">080-022-0182</a></li>
+                <li><a href="">주문/결제</a></li>
+                <li><a href="">배송</a></li>
+                <li><a href="">주문배송조회</a></li>
+                <li><a href="">멤버쉽 혜택/서비스</a></li>
+                <li><a href="">공지사항</a></li>
+                <li><a href="">1:1 이메일 문의</a></li>
+              </ul>
+          </div>
+          <div class="col-xs-3" id = "bottom">
+              <ul>
+                <li><a href="">ABOUT NIKE</a></li>
+                <li><a href="">나이키에 대하여</a></li>
+              </ul>
+          </div>
+
+          <div class="col-xs-3" id = "bottom">
+            <ul>
+                <li><a href="">SOCIAL</a></li>
+                <li><a href="">facebook</a></li>
+              </ul>
+          </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright" style="color: white;">ⓒ 2018 Nike, Inc. All Rights Reserved</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#" style="color: white">이용약관</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" style="color: white">개인정보처리방침</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+   
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+  <script>
+    $("#menuDiv").on("mouseover",function(){
+      $(".dropMenu").show();
+    });
+
+    $("#nikeMenu a").on("mouseover",function(){
+      $(this).css("border-bottom","1px solid gray");
+    });
+    $("#nikeMenu a").on("mouseleave",function(){
+      $(this).css("border-bottom","none");
+    });
+
+    $("#menuDiv").on("mouseleave",function(){
+      $(".dropMenu").hide();
+    });
+    $(".dropMenu").on("mouseover",function(){
+      $(this).show();
+    });
+    $(".dropMenu").on("mouseleave",function(){
+      $(this).hide();
+    });
+    $("#jo").on("mouseover",function(){
+      $(this).attr("src","./img/jo_hover.png");
+    })
+    $("#jo").on("mouseleave",function(){
+      $(this).attr("src","./img/menu_jo.png");
+    })
+    $("#con").on("mouseover",function(){
+      $(this).attr("src","./img/con_hover.png");
+    })
+    $("#con").on("mouseleave",function(){
+      $(this).attr("src","./img/menu_con.png");
+    })
+    $(document).ready(function(){
+     $("#carouselExampleControls").carousel({
+         interval : 3000,
+         pause: false
+     });
+});
+  </script>
+</html>

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Agency - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet">
+      <link href="http://www.bootstrapicons.com/index.htm?iconset=fontawesome&version=4.0.3">
+      <link href="css/agency.min.css" rel="stylesheet">
+
+      <style>  
+                #mainNav1{
+        background-color:white;
+        border-bottom: 1px solid gray;
+        height:35px !important;
+      }
+      #mainNav2{
+        position: fixed;
+        top:35px;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        z-index: 10;
+        border-bottom: 1px solid gray;
+      }
+      .navbar a{
+        color:gray;
+        font-weight: bold;
+        margin-left: 30px;
+      }
+      #menuDiv{
+        margin:0 auto;
+        float: left;
+        height:50px;
+        padding-top:15px;
+      }
+      .dropMenu{
+        display:none;
+        background-color: white;
+        position: fixed;
+        top:85px;
+        width: 100%;
+        height:400px;
+        z-index: 10;
+      }
+      .dropMenu a{
+        color:gray;
+        font-size: 7px;
+      }
+      .dropUl{
+        display: inline-block;
+        border-right: 1px solid gray;
+        position: relative;
+        top:10px;
+        width: 13%;
+        height: 80%;
+      }
+      .header_sowon{
+        position:relative;
+        top:85px;
+      }
+      .fontBold{
+        font-weight: bold;
+      }
+      .dropMenu a:hover{
+        list-style: underline;
+      }
+      .resize{
+        font-size: 10px;
+      }
+      .moveLeft{
+        position: absolute;
+        left:0;
+        float: left;
+
+      }
+      .moveLeft>div{
+        display: inline-block;
+        width:80px;
+        height:30px;
+        text-align: center;
+        padding-top:5px;
+      }
+      .moveLeft>div>a{
+       margin:0 auto;
+     }
+     .icon {
+      position: absolute;
+      top:5px;
+    }
+    #search {
+      padding-left: 20px;
+    }
+    #searchLable {
+      position: relative;
+    }
+    #searchLable:before {
+      color: #666;
+      content:"\f002";
+      font-family: FontAwesome;
+      position: absolute;
+      top: 2px;
+      left: 5px;
+    }
+    #byeBtn{
+      background-color: white;
+      font-size: 10px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border-style: solid;
+      border-color: black;
+      border-width: 1px;
+    }
+
+   @media(min-width: 100px) and (max-width: 995px){
+      #contact_div{
+        display: none;
+      }
+    }
+
+    @media(min-width:995px){
+      #contact_div_small{
+        display:none;
+
+      }
+    }
+      .btn-group button{
+        border-radius:0px;
+        padding:15px 30px;
+          border:0.1px solid gray;
+
+      } 
+      .btn1{
+            padding:10px 30px;
+            border-radius:0px;
+           background-color:black;
+           font-size: 13px;
+           color:white;
+        }
+      .mat-input {
+           position: relative;
+            background: transparent;
+           border: none;
+           outline: none;
+           font-size: 16px;
+    }
+
+    .faplus{
+      margin-top:5px;
+    }
+
+    .list-item{
+      font-size: 15px;
+    }
+
+    .btn-default {
+        background-color: #ffffff;
+    }
+
+    .border-color{
+        border-color:#ff0000;
+    }
+    
+    td{
+      text-align:center;
+
+
+    }
+    .table{
+      width:80%;
+          }
+          #dabu{
+            text-decoration:underline;
+            color:black;
+            font-size: 15px;
+          }
+
+    img {
+      max-width: 100%; 
+       height: auto; 
+    }
+
+   /*  @media (min-width: 768px) {
+     .container {
+       width: 1000px;
+     }
+   }
+   
+   @media (min-width: 992px) {
+     .container {
+       width: 1000px;
+     }
+   } */
+
+
+
+출처: http://dgkim5360.tistory.com/entry/bootstrap-adjust-container-width [개발새발로그]
+
+
+  </style>
+
+  </head>
+<body id="page-top">
+
+   <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav1">
+    <div class="container resize">
+      <div class="moveLeft">
+        <div>
+          <a  href="#page-top">NIKE</a>
+        </div>
+        <div>
+          <a  href="#page-top">NIKE+</a>
+        </div>
+        <div>
+          <a  href="#page-top"><img src="./img/menu_jo.png" alt="" id = "jo"></a>
+        </div>
+        <div style="width:90px;">
+          <a  href="#page-top"><img src="./img/menu_con.png" alt="" id="con"></a>
+        </div>
+      </div>
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a href="#services">회원가입/</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio" style="margin-left:0;">로그인</a>
+        </li>
+        <li class="nav-item" style>
+          <a href="#about">고객센터</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team"><span class="fa fa-shopping-cart fa-lg"></span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact"><img src="./img/lang.png" alt=" "></a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav2">
+    <div class="container-fluid">
+        <a href="#page-top"><img src="./img/nike_logo2.png" alt="" height="45px;"></a>
+        <div id="menuDiv">
+          <ul class="navbar-nav text-uppercase ml-auto" id="nikeMenu">
+            <li class="nav-item">
+              <a  href="#services">MEN</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio">WOMEN</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about">BOYS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#team">GIRLS</a>
+            </li>
+          </ul>
+        </div>
+        <label id="searchLable">
+          <input type="text" id="search" placeholder="검색어 입력" />
+        </label>
+    </div>
+  </nav>
+  <!-- dropMenu -->
+  <div class="dropMenu">
+    <div class="dropUl fontBold" style="left:17%;" border-left="1ps solid gray">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a  href="#services">신상품</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio">SNKRS 런칭캘린더</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">축구대표팀 컬렉션</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team">나이키 비전 선글라스</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">나이키 캡 컬렉션</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">THE BEST</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">1 on 1 상품 설명 서비스</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">가격인하</a>
+        </li>
+      </ul>
+    </div>
+    <div class="dropUl" style="left:20%;border-right: none;" border-left="1ps solid gray">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a  class="fontBold" href="#services">신발</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio">신발 전체</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">라이프스타일</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team">러닝</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">트레이닝&짐</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">농구</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">조던</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">축구</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">스케이트보딩</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">골프</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">테니스</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">샌들&슬리퍼</a>
+        </li>
+      </ul>
+    </div>
+    <div class="dropUl" style="left:20%;" border-left="1ps solid gray">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a   class="fontBold" href="#services">의류</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio">의류 전체</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">탑 & 티셔츠</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team">숏 팬츠</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">후디 & 크루</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">재킷 & 베스트</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">팬츠 & 타이츠</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">나이키프로</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">선글라스</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">가방</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">양말</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">모자 & 용품</a>
+        </li>
+      </ul>
+    </div>
+    <div class="dropUl" style="left:23%;border-right: none;" border-left="1ps solid gray">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a class="fontBold" href="#services">스포츠</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio">러닝</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">트레이닝 & 짐</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team">농구</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">축구</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">스케이트보딩</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">골프</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">테니스</a>
+        </li>
+      </ul>
+    </div>
+    <div class="dropUl" style="left:23%;border-right: none;" border-left="1ps solid gray">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a class="fontBold" href="#services">브랜드</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio">Nike Sportswear</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">트레이닝 & 짐</a>
+        </li>
+        <li class="nav-item">
+          <a href="#team">농구</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">축구</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">스케이트보딩</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">골프</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">테니스</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 여기서 부터 본문 시작!! -->
+
+
+
+<div class="container-fluid" style="padding-top: 150px;">
+
+  <div class="container">
+    <div class="row">
+        <!-- Image -->
+        <div class="col-sm-7">
+            <div class="row">
+                  <div class="col-sm-6"><img  src="img/subpage_img1.png"/></div>
+                  <div class="col-sm-6"><img  src="img/subpage_img2.png"/></div>
+            </div>
+
+            <div class="row">
+                 <div class="col-sm-6"><img src="img/subpage_img3.png"/></div>
+                 <div class="col-sm-6"><img src="img/subpage_img4.png"/></div>
+            </div>
+            <div class="row">
+                 <div class="col-sm-6"><img src="img/subpage_img5.png"/></div>
+                 <div class="col-sm-6"><img src="img/subpage_img6.png"/></div>
+            </div>
+        </div> 
+
+
+        <!-- Add to cart -->
+        <div class="col-sm-5">
+            <div class="md-3">
+               
+              <h3><b>나이키 에어 줌 페가수스 35</b></h3>
+
+                    <p >WOMEN 신발 러닝  139,000 원</p>
+                    <form>
+                        <div class="form-group1">
+                          <h6><b>사이즈선택</b></h6>
+                        <table class="table table-bordered">
+    <tbody>
+      <tr> 
+        <td>220</td>
+        <td>225</td>
+        <td>230</td>
+         <td>235</td>
+        <td>240</td>
+      </tr>
+      <tr>
+    
+        <td>245</td>
+        <td>250</td>
+        <td>255</td>
+         <td>260</td>
+        <td>265</td>
+      </tr>
+      <tr>
+      
+        <td> 270</td>
+        <td>275 </td>
+        <td>280</td>
+         <td>285 </td>
+        <td>290</td>
+      </tr>
+    </tbody>
+  </table>
+                        
+                        <br/>
+                        
+                            <small><i class="fa fa-envelope"></i>&nbsp;<b>NOTIFY ME 입고 알림 신청</b></small>
+                            <br/> <br/>
+                            <div class="input-group md-3">
+                             <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-3 col-xs-offset-3">
+                                        <div class="input-group number-spinner">
+                                           <label><b>수량</b></label>
+                                            <input type="text" class="mat-input text-center" value="1"><i class="fa fa-plus faplus"> </i>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                             <hr>  
+                      
+                    <div class="btn-group2" role="group">
+                        <button class="btn btn-lg btn-reverse btn1">주문하기</button>
+                         <button class="btn btn-lg btn-reverse btn1 ">바로구매</button>
+                          <button class="btn btn-lg btn-reverse btn1"><i class="fa fa-heart"> </i></button>
+                    </div>
+                    <br/> 
+                    <i class="fa fa-home"></i> <small><b> 매장상품 확인∙예약 서비스</b></small>
+                     <br/></br>
+                      <small><i class="fa fa-check"></i> 본 제품은 안전 확인 대상 품목이며 관련 확인 인증을 필하였음을 확인합니다.</small>
+                    </form>
+                    <br/> <br/> 
+                    <div class="product_rassurance">
+                        <ul class="list-inline">
+                            <li class="list-item">현재 컬러 : 엘레멘탈 로즈/베얼리 로즈/빈티지 와인</li>
+                            <li class="list-item">스타일 : 942855-601</li>
+                        </ul>
+                    </div>
+                     <br/>
+                     <a href="#" id="dabu">더보기</a>
+                    <hr>   
+                    <h6> <b> 배송 / 반품 / AS</b><i class="fa fa-plus float-right"> </i> </h6>
+                    <hr>  
+                    <h6> <b>  유의사항</b> <i class="fa fa-plus float-right"> </i> </h6>  
+
+             </div>
+         </div>
+     </div>
+   </div>
+
+
+  </div>
+    
+   <br>
+<section id="contact">
+      <div class="container" id="contact_div_small">
+        <div class="row">
+          <div class="col-xs-4"><li><a href="">주문배송</a></li></div>
+          <div class="col-xs-4"><li><a href="">매장안내</a></li></div>
+          <div class="col-xs-4"><li><a href="">고객센터</a></li></div>
+            
+        </div>
+      </div>
+
+      <div class="container" id = "contact_div">
+        <div class="row">
+          <div class="col-xs-3" id = "bottom">
+                <ul>
+                  <li><a href="#">매장안내</a></li>
+                  <li><a href="">로그인</a></li>
+                  <li><a href="">회원가입</a></li>
+                </ul>
+                
+          </div>
+          <div class="col-xs-3" id = "bottom">
+              <ul>
+                <li><a href="">고객센터</a></li>
+                <li><a href="">080-022-0182</a></li>
+                <li><a href="">주문/결제</a></li>
+                <li><a href="">배송</a></li>
+                <li><a href="">주문배송조회</a></li>
+                <li><a href="">멤버쉽 혜택/서비스</a></li>
+                <li><a href="">공지사항</a></li>
+                <li><a href="">1:1 이메일 문의</a></li>
+              </ul>
+          </div>
+          <div class="col-xs-3" id = "bottom">
+              <ul>
+                <li><a href="">ABOUT NIKE</a></li>
+                <li><a href="">나이키에 대하여</a></li>
+              </ul>
+          </div>
+
+          <div class="col-xs-3" id = "bottom">
+            <ul>
+                <li><a href="">SOCIAL</a></li>
+                <li><a href="">facebook</a></li>
+              </ul>
+          </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright" style="color: white;">ⓒ 2018 Nike, Inc. All Rights Reserved</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#" style="color: white">이용약관</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" style="color: white">개인정보처리방침</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+   
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+  <script>
+    $("#menuDiv").on("mouseover",function(){
+      $(".dropMenu").show();
+    });
+
+    $("#nikeMenu a").on("mouseover",function(){
+      $(this).css("border-bottom","1px solid gray");
+    });
+    $("#nikeMenu a").on("mouseleave",function(){
+      $(this).css("border-bottom","none");
+    });
+
+    $("#menuDiv").on("mouseleave",function(){
+      $(".dropMenu").hide();
+    });
+    $(".dropMenu").on("mouseover",function(){
+      $(this).show();
+    });
+    $(".dropMenu").on("mouseleave",function(){
+      $(this).hide();
+    });
+    $("#jo").on("mouseover",function(){
+      $(this).attr("src","./img/jo_hover.png");
+    })
+    $("#jo").on("mouseleave",function(){
+      $(this).attr("src","./img/menu_jo.png");
+    })
+    $("#con").on("mouseover",function(){
+      $(this).attr("src","./img/con_hover.png");
+    })
+    $("#con").on("mouseleave",function(){
+      $(this).attr("src","./img/menu_con.png");
+    })
+  </script>
+</html>
+
+
